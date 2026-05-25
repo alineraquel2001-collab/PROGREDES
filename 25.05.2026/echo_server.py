@@ -7,4 +7,5 @@ my_sock.bind ((SERVER, PORT))
 while True:
         msg, source = my_sock.recvfrom(512)
         my_sock.sendto(msg, (msg, source))
+    
 my_sock.close()
